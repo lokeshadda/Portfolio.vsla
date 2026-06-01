@@ -8,7 +8,7 @@ export const sectionStack = "mt-20 flex flex-col gap-20 md:mt-24 md:gap-24";
 
 export const sectionTitleSpacing = "mb-10 md:mb-12";
 
-export const heroSectionPadding = "pb-16 pt-10 md:pb-24 md:pt-12";
+export const heroSectionPadding = "pb-16 pt-20 md:pb-24 md:pt-28 lg:pt-32";
 
 export const card =
   "rounded-2xl border border-white/[0.08] bg-[#121a2e] shadow-[0_4px_24px_rgba(0,0,0,0.25)] transition-all duration-300";
