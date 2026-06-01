@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { MapPin, Phone } from "lucide-react";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 import HeroBackground from "../ui/HeroBackground";
 import { personalInfo } from "../../data/personal";
+import { withBasePath } from "../../lib/basePath";
 import { card, heroSectionPadding } from "../../lib/styles";
 import { cn } from "../../lib/utils";
 
@@ -20,19 +22,22 @@ export default function Hero() {
       <HeroBackground />
 
       <Container className="relative z-10">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.95fr] lg:items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-300/80">
-              Business Analyst · Data Quality Analyst · Analytics Engineer
-            </p>
+            <div className="flex items-center gap-3">
+              <span className="h-px w-10 bg-teal-400/70" aria-hidden />
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-teal-300/90">
+                Business Analyst · Data Quality Analyst · Analytics Engineer
+              </p>
+            </div>
 
-            <h1 className="font-display mt-5 text-5xl font-bold leading-[0.95] tracking-tight text-slate-50 sm:text-6xl lg:text-7xl">
+            <h1 className="font-display mt-6 text-4xl font-bold leading-[1.02] tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
               Turning <span className="text-teal-300">data</span>
               <br />
               into decisions
             </h1>
 
-            <p className="mt-7 max-w-xl text-base leading-relaxed text-slate-400 md:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 md:text-lg">
               {personalInfo.heroIntro[0]}
             </p>
 
@@ -62,12 +67,18 @@ export default function Hero() {
           </div>
 
           <div className="space-y-4">
-            <div className="flex justify-center lg:justify-center">
-              <div
-                className="h-36 w-36 rounded-full border-2 border-white/25 bg-white/10 bg-cover bg-center shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
-                style={{ backgroundImage: "url('/images/profile.png')" }}
-                aria-label="Profile photo"
-              />
+            <div className="flex justify-center">
+              <div className="relative h-40 w-40 overflow-hidden rounded-full border-2 border-white/25 bg-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+                <Image
+                  src={withBasePath("/images/profile.png")}
+                  alt="Lokesh Adda profile photo"
+                  fill
+                  sizes="160px"
+                  className="object-cover object-[center_20%]"
+                  priority
+                  unoptimized
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
