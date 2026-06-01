@@ -7,7 +7,7 @@ import Button from "../ui/Button";
 import HeroBackground from "../ui/HeroBackground";
 import { personalInfo } from "../../data/personal";
 import { withBasePath } from "../../lib/basePath";
-import { card, heroSectionPadding } from "../../lib/styles";
+import { card } from "../../lib/styles";
 import { cn } from "../../lib/utils";
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
       id="home"
       className={cn(
         "relative overflow-hidden border-b border-white/[0.06] bg-[#0a0f1a]",
-        heroSectionPadding
+        "pb-16 pt-20 md:pb-24 md:pt-28 lg:pt-32"
       )}
     >
       <HeroBackground />
