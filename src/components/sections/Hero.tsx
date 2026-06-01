@@ -31,10 +31,10 @@ export default function Hero() {
               </p>
             </div>
 
-            <h1 className="font-display mt-6 text-4xl font-bold leading-[1.02] tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
-              Turning <span className="text-teal-300">data</span>
+            <h1 className="font-display mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+              Building <span className="text-teal-300">trusted</span> data solutions
               <br />
-              into decisions
+              that drive intelligent decisions
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 md:text-lg">
