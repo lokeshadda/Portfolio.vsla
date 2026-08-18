@@ -9,11 +9,11 @@ export const personalInfo: PersonalInfo = {
   heroIntro: [
     "I am a data professional with four years of experience in data quality, governance, reporting, and analytics. At Genpact, I supported ING Bank and Citi on quality rules, remediation workflows, and governance documentation; At USF, I completed a Graduate Research Assistant role building regional analytics pipelines and Tableau reporting.",
     "I graduated with an M.S. in Artificial Intelligence & Business Analytics from the University of South Florida (May 2026) and publish machine learning and big data projects on GitHub—including solar consumption modeling, water potability prediction, and a real-time energy monitoring stack.",
-    "I am open to full-time opportunities in Tampa, FL and remote-friendly roles, where trusted data and practical analytics help teams make clearer, faster decisions.",
+    "I am open to full-time opportunities in Georgetown, TX and remote-friendly roles, where trusted data and practical analytics help teams make clearer, faster decisions.",
   ],
   subtitle:
     "SQL · Python · Tableau · Power BI · Azure · Spark · Scikit-learn",
-  location: "Tampa, FL",
+  location: "Georgetown, TX",
   email: "avslokesh7004@gmail.com",
   phone: "(813) 539-7126",
   linkedin: "https://www.linkedin.com/in/venkatasatyalokesh/",
